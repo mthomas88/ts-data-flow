@@ -101,13 +101,9 @@ const calculate_start_boundary = (start_val: KeywordSearchResult) => {
 
 const parse_sql = (sql: string) => {
   const normalised = sql.normalize();
-
   const sanitised_sql = sanitise_string(sql);
-
   const start_val = find_start(sanitised_sql, keywords.select);
-
   const start_boundary = calculate_start_boundary(start_val);
-
   const end_values = find_end_values(
     sanitised_sql,
     possible_terminations,

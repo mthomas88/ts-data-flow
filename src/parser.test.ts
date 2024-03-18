@@ -6,7 +6,7 @@ const test_basic_sql = `//qwerqweqweqwe
 select * from tbl_user`;
 
 suite("sql parser", () => {
-  describe("parse_sql function", () => {
+  describe("parse_sql", () => {
     let sql_result_unknown: {
       _sql?: unknown;
       _normalised?: unknown;
