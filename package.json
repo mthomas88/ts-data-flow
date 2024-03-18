@@ -1,0 +1,16 @@
+{
+  "name": "ts-data-flow",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "play": "ts-node ./src/parser.ts",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.28",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.2",
+    "vitest": "^1.4.0"
+  }
+}
